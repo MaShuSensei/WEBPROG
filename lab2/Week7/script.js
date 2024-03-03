@@ -1,6 +1,14 @@
-// script.js
+// Pop-up
+if (!sessionStorage.getItem('alertShown')) {
+    // If not, show the alert
+    alert("Welcome to Matt's Personal profile Website!");
+    // Mark the alert as shown in sessionStorage
+    sessionStorage.setItem('alertShown', 'true');
+  }
 
-document.addEventListener('DOMContentLoaded', function () {
+
+  // Content
+  document.addEventListener('DOMContentLoaded', function () {
     const logo = document.getElementById('logo');
     const content = document.querySelector('.content');
 
