@@ -1,44 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MaShu's Shack - Home</title>
-    <link rel="icon" href="Assets/Icon.ico">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="navbar">
-        <div class="w3-bar w3-white w3-card" id="navbar">
-            <a href="home.html">Home</a>
-            <a href="profile.html">Profile</a>
-            <a href="about.html">About Me</a>
-            <a href="contact.html">Contact</a>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>MaShu's Shack - Home</title>
+        <link rel="icon" href="Assets/Icon.ico">
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
+    </head>
+    <body class="ani">
+        <div class="fll_home">
+            <div class="navbar">
+                <div class="navbar_slct">
+                    <a href="home.html">Home</a>
+                    <a href="profile.html">PROFILE</a>
+                    <a href="about.html">ABOUT ME</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="contact.html"><img id="logo" src="Assets/logo.png" alt="MaShu's Shack" width="40px"></a>
+                </div>
+            </div>
+            <h1 class="title">
+                Welcome to MaShu's Shack!
+            </h1>    
+            <div class="hm_cntnt">
+                <div class="cntnr_home">
+                    <p id="intro">
+                        Hi! I am Matt, <br>A student at Asia Pacific College, 
+                        studying for a Bachelor's degree in Information and Technology with 
+                        a focus on Mobile and Internet technologies. <br> <br>
+
+                        I'm drawn to programming because I'm curious about how advanced software is created. 
+                        I want to develop my own software applications and share them with others to make their lives easier. 
+                    </p>
+                    <br>
+                    <div >
+                        Here are my Social medias:
+                        <div class="socmed">
+                            <a href="https://www.facebook.com/weehhneerr/" target="_blank"><img class="fblogo" src="Assets/fblogo.ico" width="40px" height="40px"></a>
+                            <a href="https://www.instagram.com/msh.0027/" target="_blank"><img class="iglogo" src="Assets/instalogo.ico" width="50px"></a>
+                            <a href="https://github.com/MaShuSensei/" target="_blank"><img class="gh" src="Assets/github.ico" width="50px"></a>
+                            <a href="https://www.linkedin.com/in/matthew-paren-22a0a5259/" target="_blank"><img class="gh" src="Assets/linkedin.ico" width="50px"></a>    
+                        </div>
+                    </div>
+                </div>
+                <img id="matt" id="img" src="Assets/pfp2.jpg" alt="Matt" width="300px" >
+            </div>
         </div>
-        <img id="logo" src="Assets/logo.png" alt="MaShu's Shack" width="20px">
-    </div>
-    
-    <h1 class="title">
-        Welcome to MaShu's Shack!
-    </h1>
-
-
-    <div class="cntnr_home_main">
-        <h2><br>Home</h2>
-        <div class="cntnr_home">
-            <p id="intro">My name is Matthew, A Student in Asia Pacific College taking the course of Bachelors of Science 
-                in Information and Technology Majoring in Mobile and Internet. I love programming because 
-                I love to know how they make such High-tech software, so I love 
-                to create my app and share my work with others that might help them!! 
-            </p>
-            <img id="yor" id="img" src="Assets/yor.jpg" alt="Yor Forger">
-        </div>
-    </div>
-    <footer>
-        <p>&copy; 2024 MaShu's Shack. All rights reserved.</p>
-    </footer>
-
-    <script defer src="script.js"></script>
-</body>
+    </body>
 </html>

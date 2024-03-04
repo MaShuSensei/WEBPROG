@@ -1,10 +1,10 @@
 // Pop-up
 if (!sessionStorage.getItem('alertShown')) {
-    // If not, show the alert
-    alert("Welcome to Matt's Personal profile Website!");
-    // Mark the alert as shown in sessionStorage
-    sessionStorage.setItem('alertShown', 'true');
-  }
+  // If not, show the alert
+  alert("Welcome to Matt's Personal profile Website!");
+  // Mark the alert as shown in sessionStorage
+  sessionStorage.setItem('alertShown', 'true');
+}
 
 // Console
 console.log("Introduction, Variables, Let, Const & Data Types, Strings, Booleans, Events, Precedence & Conditionals, Dates")
@@ -35,28 +35,28 @@ console.log(specificDate);
 
 let year = currentDate.getFullYear();
 console.log("Current year:", year);
-  // Content
-  document.addEventListener('DOMContentLoaded', function () {
-    const logo = document.getElementById('logo');
-    const content = document.querySelector('.content');
 
-    function rotateLogo() {
-        logo.style.transform = 'rotate(360deg)';
-        logo.style.transition = 'transform 1s ease';
+// Content
+document.addEventListener('DOMContentLoaded', function () {
+  const logo = document.getElementById('logo');
+  const content = document.querySelector('.content');
 
-        setTimeout(() => {
-            logo.style.transform = 'rotate(0deg)';
-        }, 1000);
-    }
+  function rotateLogo() {
+      logo.style.transition = 'transform 1s ease';
+      logo.style.transform = 'rotate(360deg)';
 
-    function fadeInContent() {
-        content.style.opacity = 0;
-        content.style.transition = 'opacity 1s ease';
+      setTimeout(() => {
+          logo.style.transform = 'rotate(0deg)';
+      }, 1000);
+  }
+  function fadeInContent() {
+      content.style.transition = 'opacity 1s ease';
+      content.style.opacity = 0;
 
-        setTimeout(() => {
-            content.style.opacity = 1;
-        }, 1000);
-    }
-    rotateLogo();
-    fadeInContent();
+      setTimeout(() => {
+          content.style.opacity = 1;
+      }, 1000);
+  }
+  rotateLogo();
+  fadeInContent();
 });
