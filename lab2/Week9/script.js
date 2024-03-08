@@ -36,6 +36,60 @@ console.log(specificDate);
 let year = currentDate.getFullYear();
 console.log("Current year:", year);
 
+let matt = {
+  firstname: "Matthew",
+  lastname: "Paren",
+  fullname: function() {
+    return this.firstname + " " + this.lastname;
+  }
+}
+console.log("Objects: " + matt.firstname);
+
+console.log("Objects: " + matt.fullname());
+
+console.log("Functions: ")
+function greet(hname) {
+  return "Hello, " + hname + "!";
+}
+console.log(greet("World"));
+
+console.log("Classes: ")
+class Person {
+  constructor(name) {
+      this.name = name;
+  }
+
+  greet() {
+      return `Hello, ${this.name}!`;
+  }
+}
+let person = new Person("User");
+console.log(person.greet());
+
+console.log("Async: ");
+async function fetchData() {
+  let response = await fetch("https://jsonplaceholder.typicode.com/posts/1");
+  let data = await response.json();
+  return data;
+}
+fetchData().then(data => console.log(data));
+
+document.addEventListener('DOMContentLoaded', function() {
+  console.log("HTML DOM : Click (Mashu?)");
+
+  let element = document.getElementById('socmed');
+  
+  if (element) {
+      element.innerHTML = "Mashu?";
+      
+      element.addEventListener('click', function() {
+          alert('It is my Nickname from games!');
+      });
+  } else {
+      console.error("Element with ID 'socmed' not found.");
+  }
+});
+
 // Content
 document.addEventListener('DOMContentLoaded', function () {
   const logo = document.getElementById('logo');
