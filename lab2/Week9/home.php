@@ -9,7 +9,31 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <?php
-    echo "My first PHP script!";
+        // 1. Introduction
+        echo "Hello, 1st time\n";
+
+        // 2. Variables
+        $name = "Matt";
+        $age = 22;
+
+        // 3. Echo / Print
+        echo "My name is $name and I am $age years old.\n";
+
+        // 4. Data Types
+        $string = "This is a string";
+        $integer = 27;
+        $float = 2.28;
+        $boolean = true;
+        $array = array(1, 2, 3);
+
+        // 5. Operators & Math
+        $num1 = 10;
+        $num2 = 5;
+        $sum = $num1 + $num2;
+        $difference = $num1 - $num2;
+        $product = $num1 * $num2;
+        $quotient = $num1 / $num2;
+        $remainder = $num1 % $num2;    
     ?>
     <body class="ani">
         <div class="fll_home">
